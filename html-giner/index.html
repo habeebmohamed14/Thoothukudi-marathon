@@ -351,28 +351,30 @@
                 <div class="marathon-register">
                     <img src="assets/img/our-mission-2.svg" alt="img" class="register-img-effect-1">
                     <h2 class="title"><span>Register form</span></h2>
-                    <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe0vdvhst3K2JfiUeFupMDOP9YoWSIlkL9vw_Ognvi9w3MTwA/formResponse" id=' mG61Hd'name="contactform" method="POST">
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+					onload="if(submitted)  {window.location.reload}"></iframe>
+                    <form action="https://docs.google.com/forms/u/7/d/e/1FAIpQLSd0fS6xlMFJoAjx7C011tWHBQcZWSXEBgAmOwvTgnsZ2koBeQ/formResponse" id='mG61Hd'name="contactform" method="POST" target="hidden_iframe">
                         <ul class="form-cover">
-                            <li class="inp-cover inp-name"><input id="name" type="text" name="entry.2005620554" placeholder="Name"></li>
-                            <li class="inp-cover inp-email"><input id="email" type="email" name="entry.1045781291" placeholder="E-mail"></li>
+                            <li class="inp-cover inp-name"><input id="name" type="text" name="entry.1104761307" placeholder="Name"></li>
+                            <li class="inp-cover inp-email"><input id="email" type="email" name="entry.1203665090" placeholder="E-mail"></li>
                             <li class="inp-cover inp-age">
-                                <select class="nice-select" name="dlut">
+                                <select class="nice-select" name="entry.1799161776">
 										<option selected="selected" disabled>Age</option>
-										<option>18 - 25</option>
-										<option>26 - 30</option>
-										<option>31 - 35</option>
-										<option>36 - 40</option>
-										<option>41+</option>
+										<option value="18-25">18 - 25</option>
+										<option value="26-30">26 - 30</option>
+										<option value="31-35">31 - 35</option>
+										<option value="36-40">36 - 40</option>
+										<option value="41+">41+</option>
 									</select>
                             </li>
                             <li class="inp-cover inp-gender">
-                                <select class="nice-select" name="entry.1202937457">
+                                <select class="nice-select" name="entry.202255309">
 										<option selected="selected" disabled>Gender</option>
-										<option>Male</option>
-										<option>Female</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
 									</select>
                             </li>
-                            <li class="inp-text"><textarea id="comments" name="entry.839337160" placeholder="Message"></textarea></li>
+                            <li class="inp-text"><textarea id="comments" name="entry.1035313120" placeholder="Message"></textarea></li>
                         </ul>
                         <div class="checkbox-wrap">
                             <!-- <div class="checkbox-cover">
