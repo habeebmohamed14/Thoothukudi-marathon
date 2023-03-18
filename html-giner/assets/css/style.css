@@ -3297,24 +3297,33 @@ footer .social-list {
 }
 
 .clients-cover {
-    margin: 65px
+    margin: 15px
 }
+
+/* .client-slide-cover {
+    width: 120% !important;
+     /* margin-left: 20px;  
+    padding-left: 100px;
+} */
 
 .clients-cover .client-slide {
     padding: 0 15px
+
 }
 
 .clients-cover .client-slide .client-slide-cover {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: inline-flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 147px
+    height: 147px;
+    width: 24 % !important;
+
 }
 
 .s-marathon-news {
@@ -9079,4 +9088,13 @@ body.modal .popup-close {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
   }
+
+  #timer {
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  

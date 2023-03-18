@@ -33,6 +33,17 @@
             height: 100% !important;
         }
     }
+    #sponser_container .slick-track{
+        width: 100% !important;
+    }
+    #sponser_container .client-slide{
+        width: 25% !important;
+    }
+    @media ( (min-width: 320px) and  (max-width: 580px)){
+        #sponser_container .slick-slide{
+            display: -webkit-box !important;
+        }
+    }
 </style>
 <body id="home">
     <!-- =============== PRELOADER =============== -->
@@ -56,10 +67,10 @@
             <div class="container">
                 <a href="index.html" class="logo"><img src="assets/img/Logo_.JPG" style="height: 121px; width: 230px;" alt="logo"></a>
                 <ul class="social-list">
-                    <li><a target="_blank" href="https://www.facebook.com/rovadex"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://twitter.com/RovadexStudio"><i class="fab fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/rovadex"><i class="fab fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    <li><a target="_blank" href="https://www."><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a target="_blank" href="https://"><i class="fab fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://"><i class="fab fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -160,26 +171,49 @@
                 </div>
             </div>
         </div>
+<script> { 
+    // Set the date and time to count down to
+    var countDownDate = new Date("April 30, 2023 08:00:00 am").getTime();
+    
+    // Calculate the remaining time and update the timer
+    function updateTimer() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24)); 
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+    }
+    
+    // Update the timer every second
+    setInterval(updateTimer, 1000);
+}
+    </script>
+      
         <img class="marathon-slider-shape" src="assets/img/slider-home1-shape.svg" alt="shape">
         <div id="clockdiv" class="clock-timer clock-timer-marathon">
-            <div class="days-item">
+             <div class="days-item">
                 <img src="assets/img/counter-1.svg" alt="img">
-                <span class="days"></span>
+                <span id="days"></span>
                 <div class="smalltext">Days</div>
-            </div>
+            </div> 
             <div class="hours-item">
                 <img src="assets/img/counter-2.svg" alt="img">
-                <span class="hours"></span>
+                <span id="hours"></span>
                 <div class="smalltext">Hours</div>
             </div>
             <div class="minutes-item">
                 <img src="assets/img/counter-3.svg" alt="img">
-                <span class="minutes"></span>
+                <span id="minutes"></span>
                 <div class="smalltext">Minutes</div>
             </div>
             <div class="seconds-item">
                 <img src="assets/img/counter-4.svg" alt="img">
-                <span class="seconds"></span>
+                <span id="seconds"></span>
                 <div class="smalltext">Seconds</div>
             </div>
         </div>
@@ -195,7 +229,7 @@
                 <div class="col-lg-6 our-mission-img">
                     <span>
 						<img class="mission-img-effect-1" src="assets/img/our-mission-2.svg" alt="img">
-						<img class="mission-img rx-lazy" src="assets/img/placeholder-all.png" data-src="assets/img/marathon123.jpeg" alt="img">
+						<img class="mission-img rx-lazy" src="assets/img/marathon123.jpeg" data-src="assets/img/marathon123.jpeg" alt="img">
 						<img class="mission-img-effect-4" src="assets/img/tringle-gray-little.svg" alt="img">
 					</span>
                 </div>
@@ -411,15 +445,15 @@
 
     <!--=================== S-CLIENTS ===================-->
     <section class="s-clients">
-        <div class="container">
+        <div class="container" id="sponser_container">
                 <h2 class="title"><span>Sponsors</span></h2>
                 <div class="clients-cover">
-                    <div class="client-slide" class="col-lg-3" style="width: 24% !important;">
+                    <div class="client-slide" class="col-lg-3" style="width: 40% !important;">
                         <div class="client-slide-cover">
                             <img src="assets/img/JCI Elite Logo.jpg" alt="img">
                         </div>
                     </div>
-                    <div class="client-slide" class="col-lg-3" style="width: 24% !important;">
+                    <div class="client-slide" class="col-lg-3" style="width: 40% !important;">
                         <div class="client-slide-cover">
                             <img src="assets/img/marathon logo.png" alt="img">
                         </div>
@@ -429,12 +463,12 @@
                             <img src="assets/img/Digisailor new 2022 Logo-03.png" alt="img">
                         </div>
                     </div> -->
-                     <div class="client-slide" class="col-lg-3" style="width: 24% !important">
+                     <div class="client-slide" class="col-lg-3" style="width: 40% !important">
                         <div class="client-slide-cover">
                             <img src="assets/img/jci_tuticurion.jpeg" alt="img">
                         </div>
                     </div>
-                     <div class="client-slide" class="col-lg-3" style="width: 24% !important">
+                     <div class="client-slide" class="col-lg-3" style="width: 0% !important">
                         <div class="client-slide-cover">
                             <img src="assets/img/Logo_.JPG" alt="img">
                         </div>
@@ -669,10 +703,10 @@
                     <div class="footer-link">
                         <h5>Social</h5>
                         <ul class="footer-list">
-                            <li><a target="_blank" href="https://www.facebook.com/rovadex">Facebook</a></li>
-                            <li><a target="_blank" href="https://twitter.com/RovadexStudio">Twitter</a></li>
-                            <li><a target="_blank" href="https://www.instagram.com/rovadex">Instagram</a></li>
-                            <li><a target="_blank" href="https://www.youtube.com">Youtube</a></li>
+                            <li><a target="_blank" href="https:///">Facebook</a></li>
+                            <li><a target="_blank" href="https://">Twitter</a></li>
+                            <li><a target="_blank" href="https://">Instagram</a></li>
+                            <li><a target="_blank" href="https://">Youtube</a></li>
                         </ul>
                     </div>
                 </div>
