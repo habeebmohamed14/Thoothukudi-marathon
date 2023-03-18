@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -17,7 +18,15 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
+<style>
+    
+    @media ((max-width: 991px)) {
+        #partner{
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+</style>
 <body id="home">
     <!-- =============== PRELOADER =============== -->
     <div class="page-preloader-cover">
@@ -36,9 +45,9 @@
 			<span></span>
 			<span></span>
 		</a>
-        <div class="top-panel">
+        <div class="top-panel" style="padding: 8px;">
             <div class="container">
-                <a href="index.html" class="logo"><img src="assets/img/Logo_.JPG" style="height: 50px; width: 100px;" alt="logo"></a>
+                <a href="index.html" class="logo"><img src="assets/img/Logo_.JPG" style="height: 121px; width: 230px;" alt="logo"></a>
                 <ul class="social-list">
                     <li><a target="_blank" href="https://www.facebook.com/rovadex"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a target="_blank" href="https://twitter.com/RovadexStudio"><i class="fab fa-twitter"></i></a></li>
@@ -54,7 +63,7 @@
                         <ul class="nav-list">
                             <!-- <li class="dropdown active-page">
                                 <a href="#">home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <!-- <ul>
+                                 <ul>
                                     <li class="active-page"><a href="index.html">Home Marathon</a></li>
                                     <li><a href="conference-page.html">Home Conference</a></li>
                                     <li><a href="dance-page.html">Home Dance</a></li>
@@ -95,7 +104,7 @@
                         <img class="marathon-img" src="assets/img/slider-1.png" alt="img">
                     </div>
                     <div class="scene-item" data-depth="0.5">
-                        <div class="slider-location">Tuticorin <br>marathon <span class="date">31 MARCH 2023</span></div>
+                        <div class="slider-location">Tuticorin <br>marathon <span class="date">30 MARCH 2023</span></div>
                     </div>
                     <div class="scene-item" data-depth="0.35">
                         <div class="marathon-text-left">find<br>your</div>
@@ -114,7 +123,7 @@
                         <img class="marathon-img" src="assets/img/slider-2.png" alt="img">
                     </div>
                     <div class="scene-item" data-depth="0.5">
-                        <div class="slider-location">Tuticorin <br>marathon <span class="date">31 MARCH 2023</span></div>
+                        <div class="slider-location">Tuticorin <br>marathon <span class="date">30 MARCH 2023</span></div>
                     </div>
                     <div class="scene-item" data-depth="0.35">
                         <div class="marathon-text-left">live<br>your</div>
@@ -133,7 +142,7 @@
                         <img class="marathon-img" src="assets/img/slider-3.png" alt="img">
                     </div>
                     <div class="scene-item" data-depth="0.5">
-                        <div class="slider-location">Tuticorin <br>marathon <span class="date">31 MARCH 2023</span></div>
+                        <div class="slider-location">Tuticorin <br>marathon <span class="date">30 MARCH 2023</span></div>
                     </div>
                     <div class="scene-item" data-depth="0.35">
                         <div class="marathon-text-left">Feel<br>your</div>
@@ -186,7 +195,7 @@
                 <div class="col-lg-6 our-mission-info">
                     <ul class="mission-meta">
                         <li><i aria-hidden="true" class="fas fa-map-marker-alt"></i>Tuticorin</li>
-                        <li><i aria-hidden="true" class="fas fa-calendar-alt"></i>31.03.2023</li>
+                        <li><i aria-hidden="true" class="fas fa-calendar-alt"></i>30.03.2023</li>
                     </ul>
                     <h4> Junior chamber international 
                         TUTICORIN HERCULANEUM ELITE </h4>
@@ -204,10 +213,10 @@
                             <div class="number">2000+</div>
                             <span>Participant</span>
                         </div>
-                        <div class="mission-number-item">
+                        <!-- <div class="mission-number-item">
                             <div class="number">42.4km</div>
                             <span>run distance</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -266,7 +275,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="event-schedule-item">
+                        <! <div class="event-schedule-item">
                             <div class="schedule-item-img"><img class="rx-lazy" src="assets/img/placeholder-all.png" data-src="assets/img/event-icon-2.svg" alt="img"></div>
                             <div class="schedule-item-info">
                                 <div class="date">11:00 - 13:00</div>
@@ -308,7 +317,7 @@
             </div>
         </div>
     </section>
-    <!-- ============ S-EVENT-SCHEDULE END ============ -->
+    < ============ S-EVENT-SCHEDULE END ============ -->
 
     <!-- =============== MAP-WITH-ROUTE =============== --
     <section id="location" class="map-with-route">
@@ -340,7 +349,7 @@
             </div>
         </div>
     </section>
-    <!-- ============= MAP-WITH-ROUTE END ============= -->
+    < ============= MAP-WITH-ROUTE END ============= -->
 
     <!-- ============= MAP-WITH-ROUTE END ============= -->
     <section id="register" class="s-marathon-register">
@@ -398,40 +407,40 @@
     <!--=================== S-CLIENTS ===================-->
     <section class="s-clients">
         <div class="container">
-            <h2 class="title"><span>Sponsors</span></h2>
-            <div class="clients-cover">
-                <div class="client-slide">
-                    <div class="client-slide-cover">
-                        <img src="assets/img/JCI Elite Logo.jpg" alt="img">
+                <h2 class="title"><span>Sponsors</span></h2>
+                <div class="clients-cover">
+                    <div class="client-slide" class="col-lg-3" style="width: 33% !important;">
+                        <div class="client-slide-cover">
+                            <img src="assets/img/JCI Elite Logo.jpg" alt="img">
+                        </div>
                     </div>
-                </div>
-                <div class="client-slide">
-                    <div class="client-slide-cover">
-                        <img src="assets/img/marathon logo.png" alt="img">
+                    <div class="client-slide" class="col-lg-3" style="width: 33% !important;">
+                        <div class="client-slide-cover">
+                            <img src="assets/img/marathon logo.png" alt="img">
+                        </div>
                     </div>
-                </div>
-                <div class="client-slide">
-                    <div class="client-slide-cover">
-                        <img src="assets/img/jci_tuticurion.jpeg" alt="img">
+                    <div class="client-slide" class="col-lg-3" style="width: 33% !important;">
+                        <div class="client-slide-cover">
+                            <img src="assets/img/jci_tuticurion.jpeg" alt="img">
+                        </div>
                     </div>
-                </div>
-                <div class="client-slide">
-                    <div class="client-slide-cover">
-                        <img src="assets/img/marathon logo.png" alt="img">
+                     <div class="client-slide" class="col-lg-3" style="width: 33% !important">
+                        <div class="client-slide-cover">
+                            <img src="assets/img/Digisailor new 2022 Logo-03.png" alt="img">
+                        </div>
                     </div>
+                    <!-- <div class="client-slide">
+                        <div class="client-slide-cover">
+                            <img src="assets/img/client-6.svg" alt="img">
+                        </div>
+                    </div> -->
                 </div>
-                <div class="client-slide">
-                    <div class="client-slide-cover">
-                        <img src="assets/img/client-6.svg" alt="img">
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!--================= S-CLIENTS END =================-->
 
      <!--=================== S-CLIENTS ===================-->
-     <section class="s-clients">
+     <!-- <section class="s-clients">
         <div class="container">
             <h2 class="title"><span>Digital Partner</span></h2>
             <!-- <div class="clients-cover">
@@ -444,10 +453,10 @@
                     <div class="client-slide-cover">
                         <img src="assets/img/marathon logo.png" alt="img">
                     </div>
-                </div> -->
+                </div> --
                 <div class="client-slide">
                     <div class="client-slide-cover">
-                        <img src="assets/img/Digisailor new 2022 Logo-03.png" style="height: 250px; width: 250px;" alt="img">
+                        <img src="assets/img/Digisailor new 2022 Logo-03.png" id="partner" style="height: 750px; width: 750px; max-height: none;" alt="img">
                     </div>
                 </div>
                 <!-- <div class="client-slide">
@@ -459,10 +468,10 @@
                     <div class="client-slide-cover">
                         <img src="assets/img/client-6.svg" alt="img">
                     </div>
-                </div> -->
+                </div> --
             </div>
         </div>
-    </section>
+    </section> -->
     <!--================= S-CLIENTS END =================-->
 
     <!--================ S-MARATHON-NEWS ================-->
@@ -641,32 +650,17 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="footer-cont col-12 col-sm-4 col-lg-6">
-                    <a href="index.html" class="logo"><img src="assets/img/Logo_.JPG" style="height: 75px; width: 75px;" alt="logo"></a>
-                    <p> Tuticorin -628001, TamilNadu </p>
-                    <ul class="footer-contacts">
-                        <!-- <li class="footer-phone">
-                            <i aria-hidden="true" class="fas fa-phone"></i>
-                            <a href="tel:+18001234567">1-800-1234-567</a>
-                        </li> -->
-                        <li class="footer-email">
-                            <a href="mailto:marathontuticorin@gmail.com">marathontuticorin@gmail.com</a>
-                        </li>
-                    </ul>
-                    <div class="footer-copyright"><a target="_blank" href="https://digisailor.com">Digisailor</a> © 2023. All Rights Reserved.</div>
+                <div class="footer-cont col-12 col-sm-4 col-lg-4">
+                    <a href="index.html" class="logo"><img src="assets/img/Logo_.JPG" style="height: 145px; width: 250px;" alt="logo"></a>
                 </div>
-                <div class="footer-item-link col-12 col-sm-4 col-lg-6">
-                    <!-- <div class="footer-link">
-                        <h5>Event</h5>
-                        <ul class="footer-list">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#schedule">Key figures</a></li>
-                            <li><a href="#schedule">Runners' Photos</a></li>
-                            <li><a href="#schedule">Results</a></li>
-                            <li><a href="#schedule">Partners</a></li>
-                        </ul>
-                    </div> -->
+                <div class="footer-item-link col-12 col-sm-4 col-lg-4">
+                    <div class="footer-link">
+                        <h5>Address</h5>
+                        <p> Tuticorin -628001, TamilNadu </p>
+                        <p href="mailto:marathontuticorin@gmail.com">marathontuticorin@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-item-link col-12 col-sm-4 col-lg-4">
                     <div class="footer-link">
                         <h5>Social</h5>
                         <ul class="footer-list">
@@ -677,14 +671,9 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="footer-subscribe col-12 col-sm-6 col-lg-4">
-                    <h5>Subscribe to our newsletter. Stay up to date with our latest news and updates.</h5>
-                    <form class="subscribe-form">
-                        <input class="inp-form" type="email" name="subscribe" placeholder="E-mail">
-                        <button class="btn-form" type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <p>By clicking the button you agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms and Conditions</a></p>
-                </div> -->
+                <div class="footer-subscribe col-12 col-sm-12 col-lg-12" align="center" style="padding: 40px;">
+                    <div class="footer-copyright"><a target="_blank" href="https://digisailor.com">Digisailor</a> © 2023. All Rights Reserved.</div>
+                </div>
             </div>
         </div>
     </footer>

@@ -204,7 +204,8 @@ section {
 }
 
 p {
-    font-family: "Red Hat Display", sans-serif
+    font-family: "Red Hat Display", sans-serif;
+    text-align: justify;
 }
 
 h1,
