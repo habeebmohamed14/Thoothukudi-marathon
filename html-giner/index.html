@@ -45,6 +45,31 @@
         }
     }
 </style>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 24%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+    </style>
 <body id="home">
     <!-- =============== PRELOADER =============== -->
     <div class="page-preloader-cover">
@@ -426,7 +451,37 @@
 										<option value="Female">Female</option>
 									</select>
                             </li>
-                            <li class="inp-cover inp-blood group"><input id="blood group" type="text" name="" placeholder="Blood Group"></li>
+                            <!-- <li class="inp-cover inp-blood group"><input id="blood group" type="text" name="" placeholder="Blood Group"></li>
+                            <li class="inp-cover inp-Category"><input id="Category" type="text" name="" placeholder="Category"></li>
+                            <li class="inp-cover inp-Category">
+                                <select class="nice-select" name="entry.1799161776">
+										<option selected="selected" disabled>Category</option>
+										<option value="18-25">21 Kms Men</option>
+										<option value="26-30">10 Kms Men</option>
+										<option value="31-35">10 Kms Women</option>
+										<option value="36-40">5 Kms Walkthon</option>
+										<option value="41+"></option>
+									</select>
+                            </li> -->
+                            <!-- <li class="inp-cover inp-T shirt size"><input id="T shirt size" type="text" name="" placeholder="T shirt size"></li>
+                            <li class="inp-cover inp-T shirt size">
+                                <select class="nice-select" name="entry.1799161776">
+										<option selected="selected" disabled>T shirt size</option>
+										<option value="18-25"> Men</option>
+										<option value="26-30">  Women</option>
+										<option value="31-35">kids</option>
+										 <option value="36-40">5 Kms Walkthon</option> 
+										 <option value="41+"></option> 
+									</select>
+                            </li> 
+                             <li class="inp-cover inp-Recently undergone any surgeries/medical issues"><input id="Recently undergone any surgeries/medical issues" type="text" name="" placeholder="Recently undergone any surgeries/medical issues"></li>
+                             <li class="inp-cover inp-Recently undergone any surgeries/medical issues"> 
+                                <select class="nice-select" name="entry.1799161776">
+										<option selected="selected" disabled>Recently undergone any surgeries/medical issues</option>
+										<option value="18-25"> YES</option>
+										<option value="26-30"> NO</option>
+									</select>
+                            </li> -->
                             <li class="inp-text"><textarea id="comments" name="entry.1035313120" placeholder="Message"></textarea></li>
                         </ul>
                         <div class="checkbox-wrap">
@@ -450,8 +505,22 @@
     <section class="s-clients">
         <div class="container" id="sponser_container">
                 <h2 class="title"><span>Sponsors</span></h2>
-                <div class="clients-cover">
-                    <div class="client-slide" class="col-lg-3" style="width: 40% !important;">
+                <div class="row">
+                    <div class="column">
+                      <img src="assets/img/JCI Elite Logo.jpg" alt="Snow" style="width:50%">
+                    </div>
+                    <div class="column">
+                      <img src="assets/img/marathon logo.png" alt="Forest" style="width:50%">
+                    </div>
+                    <div class="column">
+                      <img src="assets/img/jci_tuticurion.jpeg" alt="Mountains" style="width:50%">
+                    </div>
+                    <div class="column">
+                        <img src="assets/img/Logo_.JPG" alt="Mountains" style="width:50%">
+                      </div>
+                  </div>
+                <!-- <div class="clients-cover">
+                    <div class="container" class="col-lg-3" style="width: 40% !important;">
                         <div class="client-slide-cover">
                             <img src="assets/img/JCI Elite Logo.jpg" alt="img">
                         </div>
@@ -465,7 +534,7 @@
                         <div class="client-slide-cover">
                             <img src="assets/img/Digisailor new 2022 Logo-03.png" alt="img">
                         </div>
-                    </div> -->
+                    </div> --
                      <div class="client-slide" class="col-lg-3" style="width: 40% !important">
                         <div class="client-slide-cover">
                             <img src="assets/img/jci_tuticurion.jpeg" alt="img">
@@ -476,7 +545,7 @@
                             <img src="assets/img/Logo_.JPG" alt="img">
                         </div>
                     </div> 
-                </div>
+                </div> -->
         </div>
     </section>
     <!--================= S-CLIENTS END =================-->
