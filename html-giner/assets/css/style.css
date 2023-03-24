@@ -9098,4 +9098,7 @@ body.modal .popup-close {
     text-align: center;
     margin: 20px;
   }
-  
+  #registration form.error {
+	color: red;
+	font-weight: bold;
+}

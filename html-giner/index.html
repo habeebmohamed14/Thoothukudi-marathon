@@ -576,9 +576,42 @@
 					onload="if(submitted)  {window.location.reload}"></iframe>
                     <form action="https://docs.google.com/forms/u/7/d/e/1FAIpQLSd0fS6xlMFJoAjx7C011tWHBQcZWSXEBgAmOwvTgnsZ2koBeQ/formResponse" id='mG61Hd'name="contactform" method="POST" target="hidden_iframe">
                         <div class="container-fluid">
-                            <form name="UserRegistration" action="${pageContext.request.contextPath}/RegisterServlet" method="POST" onsubmit="return validateForm()">
-                        <ul class="form-cover">
-                            <li class="inp-cover inp-name"><input id="name" type="text" name="entry.1104761307" placeholder="Name"></li>
+                            <form name="register" onsubmit="return validateForm()">
+                                <ul class="form-cover">
+                                    <li class="inp-cover inp-name"><input id="name" type="text" name="entry.1104761307" placeholder="Name"></li>
+                                <!-- <input type="text" id="name" name="name"><br><br> -->
+                                
+                                <li class="inp-cover inp-email"><input id="email" type="email" name="entry.1203665090" placeholder="E-mail"></li>
+                                <!-- <input type="email" id="email" name="email"><br><br> -->
+                                
+                                <li class="inp-cover inp-age">
+                                    <select class="nice-select" name="entry.1799161776">
+                                        <option selected="selected" disabled>Age</option>
+										<option value="18-25">18 - 25</option>
+										<option value="26-30">26 - 30</option>
+										<option value="31-35">31 - 35</option>
+										<option value="36-40">36 - 40</option>
+										<option value="41+">41+</option>
+									</select>
+                            </li>
+                                
+                            <li class="inp-cover inp-gender">
+                                <select class="nice-select" name="entry.202255309">
+										<option selected="selected" disabled>Gender</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									</select>
+                            </li>
+                                
+                            <li class="inp-text"><textarea id="comments" name="entry.1035313120" placeholder="Message"></textarea></li>
+                            <div class="checkbox-wrap">
+                                <!-- <input type="submit" value="Submit"> -->
+                                <div class="btn-form-cover">
+                                    <button id="submit" type="submit" class="btn" onclick="showAlert()"><span>Register</span></button>
+                                </div>
+                            </form>
+                        <!-- <ul class="form-cover"> -->
+                            <!-- <li class="inp-cover inp-name"><input id="name" type="text" name="entry.1104761307" placeholder="Name"></li>
                             <li class="inp-cover inp-email"><input id="email" type="email" name="entry.1203665090" placeholder="E-mail"></li>
                             <li class="inp-cover inp-age">
                                 <select class="nice-select" name="entry.1799161776">
@@ -597,7 +630,7 @@
 										<option value="Male">Male</option>
 										<option value="Female">Female</option>
 									</select>
-                            </li>
+                            </li> -->
                             <!-- <li class="inp-cover inp-blood group"><input id="blood group" type="text" name="" placeholder="Blood Group"></li>
                             <li class="inp-cover inp-Category"><input id="Category" type="text" name="" placeholder="Category"></li>
                             <li class="inp-cover inp-Category">
@@ -629,19 +662,19 @@
 										<option value="26-30"> NO</option>
 									</select>
                             </li> -->
-                            <li class="inp-text"><textarea id="comments" name="entry.1035313120" placeholder="Message"></textarea></li>
+                            <!-- <li class="inp-text"><textarea id="comments" name="entry.1035313120" placeholder="Message"></textarea></li>
                         </ul>
-                        <div class="checkbox-wrap">
+                        <div class="checkbox-wrap"> -->
                             <!-- <div class="checkbox-cover">
                                 <input type="checkbox">
                                 <p>By using this form you agree with the storage and handling of your data by this website.</p>
                             </div> -->
-                        </div>
+                        <!-- </div>
                         <div class="btn-form-cover">
                             <button id="submit" type="submit" class="btn" onclick="showAlert()"><span>Register</span></button>
-                        </div>
-                    </form>
-                    <div id="message"></div>
+                        </div> -->
+                    <!-- </form>
+                    <div id="message"></div> -->
                 </div>
             </div>
         </div>
@@ -954,29 +987,58 @@
 </body>
 
 </html>
-<script> function validateForm() {
-    var fname = document.forms["UserRegistration"]["firstname"].value;
-    var lname = document.forms["UserRegistration"]["lastname"].value;
-    var uname = document.forms["UserRegistration"]["username"].value; 
-    var pass = document.forms["UserRegistration"]["password"].value; 
-    var cpass = document.forms["UserRegistration"]["cpassword"].value;
-
-    if(cpass == pass){
-    if (fname == null || fname == "" || lname == null || lname == "" || 
-            uname == null || uname == "" || pass == null || pass == "") {
-        alert("All fields must be filled out");
-        return false;
-    }else
-        {
-            return true;
-        }
-    }
-    else
-        {
-        alert("Passwords do not match")
-        return false
-        }
+<script>
+    function validateForm() {
+	// Get form inputs
+	var name = document.forms["register"]["name"].value;
+	var email = document.forms["register"]["email"].value;
+	var age = document.forms["register"]["age"].value;
+	var gender = document.forms["register"]["gender"].value;
+	var message = document.forms["register"]["message"].value;
+	
+	// Validate name field
+	if (name == "") {
+		alert("Name must be filled out");
+		return false;
+	}
+	
+	// Validate email field
+	if (email == "") {
+		alert("Email must be filled out");
+		return false;
+	} else if (!validateEmail(email)) {
+		alert("Invalid email format");
+		return false;
+	}
+	
+	// Validate age field
+	if (age == "") {
+		alert("Age must be filled out");
+		return false;
+	} else if (isNaN(age) || age < 18 || age > 99) {
+		alert("Age must be a number between 18 and 99");
+		return false;
+	}
+	
+	// Validate gender field
+	if (gender == "") {
+		alert("Gender must be selected");
+		return false;
+	}
+	
+	// Validate message field
+	if (message == "") {
+		alert("Message must be filled out");
+		return false;
+	}
+	
+	return true;
 }
-  </script>
 
+function validateEmail(email) {
+	var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	return emailRegex.test(email);
+}
+
+</script>
   
