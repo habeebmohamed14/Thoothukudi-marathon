@@ -974,7 +974,7 @@ header {
 .marathon-header-fixed .nav-list>li>a {
     font-weight: 700;
     letter-spacing: 0.1em;
-    color: #fff
+    color: #0d5aa5
 }
 
 .marathon-header-fixed .nav-list>li>a:after {
@@ -3023,7 +3023,7 @@ footer .social-list {
     position: absolute;
     right: 17px;
     top: 40px;
-    background-image: url(../img/arrow-bottom.svg);
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
