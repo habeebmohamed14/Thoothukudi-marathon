@@ -974,7 +974,7 @@ header {
 .marathon-header-fixed .nav-list>li>a {
     font-weight: 700;
     letter-spacing: 0.1em;
-    color: #0d5aa5
+    color: #000
 }
 
 .marathon-header-fixed .nav-list>li>a:after {
@@ -2255,7 +2255,7 @@ footer .social-list {
 .s-marathon-slider .marathon-slider-shape {
     position: relative;
     width: 100%;
-    margin-top: -2px;
+    margin-top: -32px;
     display: block
 }
 
@@ -2690,6 +2690,15 @@ footer .social-list {
     will-change: transform
 }
 
+.marathon-slide .scene item1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    will-change: transform
+} 
+
 .clock-timer.clock-timer-marathon {
     position: absolute;
     bottom: 240px;
@@ -2917,14 +2926,14 @@ footer .social-list {
 .mission-number-cover .mission-number-item .number {
     display: block;
     font-size: 48px;
-    color: #0d5aa5;
+    color: #090a0a;
     line-height: 1;
     margin-bottom: 10px
 }
 
 .mission-number-cover .mission-number-item span {
     text-transform: capitalize;
-    color: #333
+    color: #0c0c0c
 }
 
 .s-choose-us {
@@ -3323,7 +3332,7 @@ footer .social-list {
     -ms-flex-align: center;
     align-items: center;
     height: 147px;
-    width: 24 % !important;
+    width: 24% !important;
 
 }
 
@@ -6919,6 +6928,11 @@ body.modal .popup-close {
         display: none
     }
 }
+@media(max-width:600px){
+    .marathon-slider {
+        min-height: 400px
+    }
+}
 
 @media (max-width: 1366px) {
     .bg-effect {
@@ -9101,4 +9115,136 @@ body.modal .popup-close {
   #registration form.error {
 	color: red;
 	font-weight: bold;
+}
+.image-slide {
+    width: 800px;
+    height: 600px;
+    background-color: #ccc; /* optional: add a background color */
+  }
+  @font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_greek.woff2") format("woff2");
+    unicode-range: U+370-377, U+37A-37D, U+37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_cyrillic_ext.woff2") format("woff2");
+    unicode-range: U+460-48F, U+492-4AF, U+4B2-4D7, U+4DA-52F, U+2DE0-2DFF, U+A640-A69F;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_hebrew.woff2") format("woff2");
+    unicode-range: U+5B0-5BC, U+5BE, U+5C0-5C3, U+5C7, U+5D0-5EA, U+5F3-5F4, U+FB2A-FB36, U+FB38-FB3C, U+FB3E, U+FB40-FB41, U+FB43-FB44, U+FB46-FB4B;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_latin.woff2") format("woff2");
+    unicode-range: U+20-7E, U+A0-AC, U+AE-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-202E, U+2030-2064, U+2066-206F, U+2074, U+20AC, U+2212;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_greek_ext.woff2") format("woff2");
+    unicode-range: U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_latin_ext.woff2") format("woff2");
+    unicode-range: U+100-130, U+132-151, U+154-24F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20B8, U+20BA-20BE, U+2C60-2C7F, U+A720-A7AE, U+A7B0-A7B7, U+A7F7-A7FF;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_cyrillic.woff2") format("woff2");
+    unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimo/font_others.woff2") format("woff2");
+    unicode-range: U+250-2C5, U+2C7-2D9, U+2DB, U+2DD-36F, U+591-5AF, U+5BD, U+5BF, U+5C4-5C6, U+5F0-5F2, U+1AB0-1ABE, U+1C80-1C88, U+1D00-1DF5, U+1DFB-1DFF, U+2070-2071, U+2075-208E, U+2090-209C, U+20B9, U+20F0, U+2100-2115, U+2117-214F, U+2153-2154, U+215B-215E, U+2184, U+2190-2195, U+21A8, U+2202, U+2206, U+220F, U+2211, U+2219-221A, U+221E-221F, U+2229, U+222B, U+2248, U+2260-2261, U+2264-2265, U+2302, U+2310, U+2320-2321, U+2500, U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C, U+2534, U+253C, U+2550-256C, U+2580, U+2584, U+2588, U+258C, U+2590-2593, U+25A0-25A1, U+25AA-25AC, U+25B2, U+25BA, U+25BC, U+25C4, U+25CA-25CC, U+25CF, U+25D8-25D9, U+25E6, U+263A-263C, U+2640, U+2642, U+2660, U+2663, U+2665-2666, U+266A-266B, U+266F, U+2E00-2E42, U+A717-A71F, U+AB30-AB65, U+F001-F002, U+F005, U+F00A-F00E, U+FB03-FB04, U+FB1D-FB29, U+FB4C-FB4F, U+FE20-FE2F, U+FEFF, U+FFFC-FFFD;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_greek.woff2") format("woff2");
+    unicode-range: U+370-377, U+37A-37D, U+37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_cyrillic_ext.woff2") format("woff2");
+    unicode-range: U+460-48F, U+492-4AF, U+4B2-4D7, U+4DA-52F, U+2DE0-2DFF, U+A640-A69F;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_hebrew.woff2") format("woff2");
+    unicode-range: U+5B0-5BC, U+5BE, U+5C0-5C3, U+5C7, U+5D0-5EA, U+5F3-5F4, U+FB2A-FB36, U+FB38-FB3C, U+FB3E, U+FB40-FB41, U+FB43-FB44, U+FB46-FB4B;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_latin.woff2") format("woff2");
+    unicode-range: U+20-7E, U+A0-AC, U+AE-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-202E, U+2030-2064, U+2066-206F, U+2074, U+20AC, U+2212;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_greek_ext.woff2") format("woff2");
+    unicode-range: U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_latin_ext.woff2") format("woff2");
+    unicode-range: U+100-130, U+132-151, U+154-24F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20B8, U+20BA-20BE, U+2C60-2C7F, U+A720-A7AE, U+A7B0-A7B7, U+A7F7-A7FF;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_cyrillic.woff2") format("woff2");
+    unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("//static.zohocdn.com/webfonts/arimobold/font_others.woff2") format("woff2");
+    unicode-range: U+250-2C5, U+2C7-2D9, U+2DB, U+2DD-36F, U+591-5AF, U+5BD, U+5BF, U+5C4-5C6, U+5F0-5F2, U+1AB0-1ABE, U+1C80-1C88, U+1D00-1DF5, U+1DFB-1DFF, U+2070-2071, U+2075-208E, U+2090-209C, U+20B9, U+20F0, U+2100-2115, U+2117-214F, U+2153-2154, U+215B-215E, U+2184, U+2190-2195, U+21A8, U+2202, U+2206, U+220F, U+2211, U+2219-221A, U+221E-221F, U+2229, U+222B, U+2248, U+2260-2261, U+2264-2265, U+2302, U+2310, U+2320-2321, U+2500, U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C, U+2534, U+253C, U+2550-256C, U+2580, U+2584, U+2588, U+258C, U+2590-2593, U+25A0-25A1, U+25AA-25AC, U+25B2, U+25BA, U+25BC, U+25C4, U+25CA-25CC, U+25CF, U+25D8-25D9, U+25E6, U+263A-263C, U+2640, U+2642, U+2660, U+2663, U+2665-2666, U+266A-266B, U+266F, U+2E00-2E42, U+A717-A71F, U+AB30-AB65, U+F001-F002, U+F005, U+F00A-F00E, U+FB03-FB04, U+FB1D-FB29, U+FB4C-FB4F, U+FE20-FE2F, U+FEFF, U+FFFC-FFFD;
 }
