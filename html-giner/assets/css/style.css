@@ -2173,8 +2173,16 @@ footer .social-list {
 .btn.btn-white {
     border-color: #fff;
     color: #0d5aa5
-}
 
+}
+#mobile_reg{
+    display: none;
+}
+@media (max-width: 760px) {
+    #mobile_reg{
+        display: flex !important;
+    }
+}
 .btn.btn-white:before {
     background-color: #fff
 }
@@ -9248,3 +9256,14 @@ body.modal .popup-close {
     src: url("//static.zohocdn.com/webfonts/arimobold/font_others.woff2") format("woff2");
     unicode-range: U+250-2C5, U+2C7-2D9, U+2DB, U+2DD-36F, U+591-5AF, U+5BD, U+5BF, U+5C4-5C6, U+5F0-5F2, U+1AB0-1ABE, U+1C80-1C88, U+1D00-1DF5, U+1DFB-1DFF, U+2070-2071, U+2075-208E, U+2090-209C, U+20B9, U+20F0, U+2100-2115, U+2117-214F, U+2153-2154, U+215B-215E, U+2184, U+2190-2195, U+21A8, U+2202, U+2206, U+220F, U+2211, U+2219-221A, U+221E-221F, U+2229, U+222B, U+2248, U+2260-2261, U+2264-2265, U+2302, U+2310, U+2320-2321, U+2500, U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C, U+2534, U+253C, U+2550-256C, U+2580, U+2584, U+2588, U+258C, U+2590-2593, U+25A0-25A1, U+25AA-25AC, U+25B2, U+25BA, U+25BC, U+25C4, U+25CA-25CC, U+25CF, U+25D8-25D9, U+25E6, U+263A-263C, U+2640, U+2642, U+2660, U+2663, U+2665-2666, U+266A-266B, U+266F, U+2E00-2E42, U+A717-A71F, U+AB30-AB65, U+F001-F002, U+F005, U+F00A-F00E, U+FB03-FB04, U+FB1D-FB29, U+FB4C-FB4F, U+FE20-FE2F, U+FEFF, U+FFFC-FFFD;
 }
+#Assciation_with.container {
+ 
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
