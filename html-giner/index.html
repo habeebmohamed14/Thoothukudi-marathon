@@ -133,7 +133,7 @@
                                     </li>
                                     <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="#clients">Partners</a></li>
-                                    <li><a href="#schedule">Terms & Conditions</a></li>
+                                    <!-- <li><a href="#schedule">Terms & Conditions</a></li> -->
                                 </ul>
                             </li>
                         </ul>
@@ -933,7 +933,7 @@
                         <a href="tel:7603952612">Wattsapp Only-7603952612</a>
                     </div>
                 </div>
-                <div class="footer-item-link col-12 col-sm-4 col-lg-4">
+                <div class="footer-item-link col-12 col-sm-4 col-lg-4" style="display: flex !important;">
                     <div class="footer-link">
                         <h5>Social Media</h5>
                         <ul class="footer-list">
@@ -972,57 +972,3 @@
 </body>
 
 </html>
-<script>
-    function validateForm() {
-        // Get form inputs
-        var name = document.forms["register"]["name"].value;
-        var email = document.forms["register"]["email"].value;
-        var age = document.forms["register"]["age"].value;
-        var gender = document.forms["register"]["gender"].value;
-        var message = document.forms["register"]["message"].value;
-
-        // Validate name field
-        if (name == "") {
-            alert("Name must be filled out");
-            return false;
-        }
-
-        // Validate email field
-        if (email == "") {
-            alert("Email must be filled out");
-            return false;
-        } else if (!validateEmail(email)) {
-            alert("Invalid email format");
-            return false;
-        }
-
-        // Validate age field
-        if (age == "") {
-            alert("Age must be filled out");
-            return false;
-        } else if (isNaN(age) || age < 18 || age > 99) {
-            alert("Age must be a number between 18 and 99");
-            return false;
-        }
-
-        // Validate gender field
-        if (gender == "") {
-            alert("Gender must be selected");
-            return false;
-        }
-
-        // Validate message field
-        if (message == "") {
-            alert("Message must be filled out");
-            return false;
-        }
-
-        return true;
-    }
-
-    function validateEmail(email) {
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-
-</script>
