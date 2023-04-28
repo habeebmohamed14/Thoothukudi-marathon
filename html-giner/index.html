@@ -92,6 +92,43 @@
             margin-top: 10%;
         }
     }
+    
+        #popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+#popup h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#popup p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#popup button {
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+	
 </style>
 
 <body id="home">
@@ -116,9 +153,9 @@
             <div class="container">
                 <a href="index.html" class="logo"><img src="assets/img/jci.png" style="height: 121px; width: 230px;"
                         alt="logo"></a>
-                <a id="mobile_reg" target="_blank" style="padding: 2px;;"
-                    href="https://forms.zohopublic.com/digisailor/form/Marathon/formperma/yxuVUhFtKa0lzrh7hfQc-fBRZUU3khTGAy7dkCMxqok"
-                    class="btn btn-white"><span>Register</span></i></a>
+                <!-- <a id="mobile_reg" target="_blank" style="padding: 2px; cursor: pointer;"
+                    onclick="openPopup();"
+                    class="btn btn-white"><span>Register</span></i></a>  -->
                 <!-- <a href="index.html" class="logo"><img src="assets/img/jci_tuticurion.jpeg" style="height: 121px; width: 230px;" alt="logo"></a> -->
                 <ul class="social-list">
                     <li><a target="_blank" href="https://www.facebook.com/JCIHerculaneumElite?mibextid=LQQJ4d"><i
@@ -142,19 +179,32 @@
                                         aria-hidden="true"></i></a>
                                 <ul>
                                     <!-- <li class="active-page"><a href="index.html">Elite Namma Thoothukudi Marathon</a></li> -->
-                                    <li><a target="_blank"
-                                            href="https://forms.zohopublic.com/digisailor/form/Marathon/formperma/yxuVUhFtKa0lzrh7hfQc-fBRZUU3khTGAy7dkCMxqok">Registration</a>
-                                    </li>
+                                     <!-- <li><a target="_blank" style="cursor: pointer;" 
+                                         onclick="openPopup();">Registration</a>
+                                    </li>  -->
                                     <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="#clients">Partners</a></li>
                                     <!-- <li><a href="#schedule">Terms & Conditions</a></li> -->
                                 </ul>
                             </li>
                         </ul>
+                        <!-- href="https://forms.zohopublic.com/digisailor/form/Marathon/formperma/yxuVUhFtKa0lzrh7hfQc-fBRZUU3khTGAy7dkCMxqok"  -->
                     </nav>
-                    <a target="_blank"
-                        href="https://forms.zohopublic.com/digisailor/form/Marathon/formperma/yxuVUhFtKa0lzrh7hfQc-fBRZUU3khTGAy7dkCMxqok"
-                        class="btn btn-white"><span>Click here to REGISTER </span></a>
+                    <!-- <a href="#"     class="btn btn-white" onclick="openPopup();"><span>Click here to REGISTER</span></a> -->
+
+<div id="popup">
+  <h2>Registration Closed</h2>
+  <p style="text-align: center;">Online registration has been closed. <br><br> But you can still Register in-person at the Event location.<BR>Please be aware that On-spot Registration does not include a T-shirt or RF ID BIB, however, you'll receive a Kitbag and Certificate.<BR> We appreciate your understanding and hope to see you soon!</p>
+  <P inline style="text-align: center; font-size: 20px;"> 4.30 AM : 30 APRIL 2023 </P> 
+    <button onclick="closePopup();">Close</button>
+</div>
+
+                         
+                        <!-- <div class="popup">
+                            <h1> Online Registration Closed</h1>
+                            <p>We're sorry, but registration for this event has closed.</p>
+                            <p>On spot registration is there but no Tshirt , RF ID  BIB, only kitbag & certificate only.</p>
+                        </div> -->
                 </div>
             </div>
         </div>
@@ -175,7 +225,7 @@
                     </div>
                     <div class="scene-item" data-depth="0.5">
                         <div class="slider-location" style="font-size: 14px !important;">Elite Namma <br> Thoothukudi
-                            marathon <br> <span class="date">30 April 2023</span></div>
+                            marathon <br> <span class="date"> 4.30 AM : 30 APRIL 2023 </span></div>
                     </div>
                     <div class="scene-item" data-depth="0.35">
                         <div class="marathon-text-left">say<br>no</div>
@@ -196,7 +246,7 @@
                     </div>
                     <div class="scene-item" data-depth="0.5">
                         <div class="slider-location" style="font-size: 14px !important;"> Elite Namma Thoothukudi
-                            Marathon <br> <span class="date">30 April 2023</span></div>
+                            Marathon <br> <span class="date"> 4.30 AM : 30 APRIL 2023</span></div>
                     </div>
                     <div class="scene-item" data-depth="0.35">
                         <div class="marathon-text-left">live<br>your</div>
@@ -217,7 +267,7 @@
                     </div>
                     <div class="scene-item" data-depth="0.5">
                         <div class="slider-location" style="font-size: 14px !important;"> Elite Namma Thoothukudi
-                            Marathon <br><span class="date">30 April 2023</span></div>
+                            Marathon <br><span class="date"> 4.30 AM : 30 APRIL 2023 </span></div>
                     </div>
                     <div class="scene-item" data-depth="0.35">
                         <div class="marathon-text-left">Feel<br>your</div>
@@ -984,5 +1034,19 @@
     <script src="assets/js/parallax.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     
+    <script>
+        window.addEventListener('load', function() {
+  openPopup();
+});
+
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+      }
+      
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+
 </body>
 </html>
